@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiahan Yang</title>
+  <meta name="description" content="Jiahan Yang - English CV and resume." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>Jiahan Yang</h1>
+        <p class="meta">
+          <a href="mailto:Yangbadger222@gmail.com">Yangbadger222@gmail.com</a>
+          <span>·</span>
+          <a href="https://github.com/Yangbadger222" target="_blank" rel="noreferrer">GitHub</a>
+          <span>·</span>
+          <a href="https://yangbadger222.github.io" target="_blank" rel="noreferrer">yangbadger222.github.io</a>
+        </p>
+      </div>
+      <a class="button" href="assets/jiahan.yang.pdf" download>Download PDF</a>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-head">
+          <strong>Xi'an Jiaotong-Liverpool University</strong>
+          <span>Sep 2024 - Jun 2028</span>
+        </div>
+        <div class="item-sub">B.Eng. in Mechatronics and Robotic Systems | WAM: 75+ / 100 (First Class, UK system)</div>
+        <div class="item-body">Relevant coursework: Embedded Systems, Circuit Theory, Electronics, Control Systems</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <p>Robot learning · loco-manipulation · imitation learning · autonomous navigation · SLAM/GNSS fusion · world models for robotics</p>
+    </section>
+
+    <section>
+      <h2>Selected Research &amp; Robotics Projects</h2>
+
+      <article class="item">
+        <div class="item-head">
+          <strong>ATEC 2026 Simulation Challenge - Legged Loco-Manipulation</strong>
+          <span>May 2026 - Present</span>
+        </div>
+        <div class="item-sub">Team "Zhu-Yang Farm" | Isaac Lab, RSL-RL / PPO, Unitree B2, AgileX Piper, Python</div>
+        <ul>
+          <li>Led the full technical development for a 2-member team, currently ranked 1st by combined score across two tracks.</li>
+          <li>Built an Isaac Lab control stack for a legged robot with an arm to autonomously navigate, detect, reach, pick, transport, and place randomly distributed objects in a 20 m x 20 m arena.</li>
+          <li>Trained crouch-aware locomotion policies with a 4D command interface for linear velocity, yaw rate, and body-height control, enabling near-ground manipulation.</li>
+          <li>Implemented a submission-ready pipeline combining RL locomotion, finite-state task planning, pure-Python Piper 6-DoF IK, HSV+depth detection, and corrected camera projection.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <strong>SO-101 Real-Robot Imitation Learning</strong>
+          <span>Spring 2026</span>
+        </div>
+        <div class="item-sub">SO-101 Manipulator, pi0.5 Policies, Imitation Learning, Python</div>
+        <ul>
+          <li>Deployed pi0.5 imitation-learning policies on a physical SO-101 robotic arm for tabletop cleanup and small-cube grasping tasks.</li>
+          <li>Collected and adapted demonstrations for real-world manipulation, focusing on action execution, calibration, grasp timing, and systematic failure analysis.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <strong>XJTLU Autonomous Vehicle Research Platform</strong>
+          <span>2025 - Present</span>
+        </div>
+        <div class="item-sub">ROS 2 Humble, Jetson Orin NX, GNSS / RTK, Nav2 MPPI, FAST-LIO2, PGO, STM32</div>
+        <ul>
+          <li>Responsible for GNSS/RTK route navigation, Jetson deployment, and algorithm modification in a ROS 2 autonomous vehicle stack.</li>
+          <li>Integrated route-navigation workflows around RTK GNSS, route collection, live alignment, waypoint execution, and Nav2 MPPI local planning.</li>
+          <li>Worked with Livox MID-360 LiDAR, UM982 RTK, FAST-LIO2 odometry, PGO map correction, STM32 motor control, runtime logging, and launch automation on Jetson Orin NX.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <strong>ReKep-Based Supermarket Picking Simulation</strong>
+          <span>2026</span>
+        </div>
+        <div class="item-sub">ReKep, Relational Keypoint Constraints, Language-Conditioned Manipulation</div>
+        <ul>
+          <li>Adapted ReKep-style relational keypoint constraints for a simulated supermarket item-picking scenario, studying language-conditioned manipulation through object-keypoint relations and spatial constraints.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Additional Engineering Experience</h2>
+      <div class="item">
+        <div class="item-sub">STM32, PCB Design, PID Control, Kalman Filtering, SolidWorks, ESP8266</div>
+        <ul>
+          <li>Built STM32 robotics prototypes including a smart desktop robot and a two-wheel self-balancing robot, covering PCB layout, soldering, servo / OLED control, PID attitude control, and Kalman-filter-based state estimation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Robotics</h3>
+          <p>ROS 2, Isaac Lab, Nav2, FAST-LIO2, PGO, SLAM, GNSS/RTK, LiDAR/IMU integration, robot kinematics</p>
+        </div>
+        <div>
+          <h3>Learning</h3>
+          <p>PyTorch, reinforcement learning, imitation learning, VLA/robot policy reproduction, LangChain, LoRA fine-tuning</p>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <p>Python, C/C++, TypeScript, Linux, Git, Docker, FastAPI</p>
+        </div>
+        <div>
+          <h3>Hardware</h3>
+          <p>STM32, PCB design, serial/CAN communication, SolidWorks, Jetson deployment, sensor bring-up</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
