@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="visuals.css" />
 </head>
 
 <body>
@@ -131,14 +132,18 @@
           <li>embodied intelligence</li>
         </ul>
 
-        <figure class="snapshot mini-photo">
-          <div class="tape tape-left"></div>
-          <img data-photo="quadruped" alt="Robotics experiment platform with an RGB-D camera" />
-          <figcaption>
-            <span>robotics experiments</span>
-            <span class="scribble">perception mounted up here ↑</span>
-          </figcaption>
-        </figure>
+        <div class="mini-diagram" aria-label="Robotics experiment sketch">
+          <span class="mono-label">EXPERIMENT NOTE</span>
+          <div class="mini-bot">
+            <span class="camera"></span>
+            <span class="body"></span>
+            <span class="leg l1"></span>
+            <span class="leg l2"></span>
+            <span class="leg l3"></span>
+            <span class="leg l4"></span>
+          </div>
+          <p class="scribble">perception mounted up here ↑</p>
+        </div>
       </aside>
     </section>
 
@@ -169,14 +174,21 @@
           <p class="scribble project-note">global route + local perception →</p>
         </div>
 
-        <figure class="snapshot rover-photo">
-          <div class="tape tape-top"></div>
-          <img data-photo="rover" alt="Green six-wheel autonomous rover platform" />
-          <figcaption>
-            <span>navigation platform / 2025—</span>
-            <span class="scribble">MID-360 + dual RTK ↑</span>
-          </figcaption>
-        </figure>
+        <div class="rover-card" aria-label="Autonomous rover schematic">
+          <div class="rover-card-grid"></div>
+          <svg viewBox="0 0 520 320" role="img" aria-label="Rover side-view sketch">
+            <g class="sketch-lines">
+              <path d="M106 188 L150 132 L374 132 L415 188 L393 230 L126 230 Z"/>
+              <path d="M159 132 L188 92 L340 92 L372 132"/>
+              <circle cx="150" cy="236" r="34"/><circle cx="260" cy="241" r="38"/><circle cx="370" cy="236" r="34"/>
+              <path d="M220 92 L225 53 M308 92 L313 45"/>
+              <path d="M213 53 L237 53 M301 45 L325 45"/>
+              <ellipse cx="264" cy="96" rx="28" ry="10"/>
+            </g>
+          </svg>
+          <span class="scribble rover-label">real platform →</span>
+          <span class="mono-label rover-meta">ROS 2 / RTK / LiDAR</span>
+        </div>
       </article>
 
       <article class="project project-atec">
@@ -218,7 +230,7 @@
 
         <figure class="snapshot logger-photo">
           <div class="tape tape-corner"></div>
-          <img data-photo="logger" alt="White custom RTK logger enclosure on a desk" />
+          <img src="assets/logger.webp" alt="White custom RTK logger enclosure on a desk" />
           <figcaption>
             <span>portable logger / prototype</span>
             <span class="scribble">finally works.</span>
@@ -318,7 +330,6 @@
     <p class="scribble footer-note">thanks for looking through my notes.</p>
   </footer>
 
-  <script src="photos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
