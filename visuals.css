@@ -1,4 +1,43 @@
 /* V2 visual layer — generated notebook illustrations + restrained scrapbook details. */
+.hero-photo {
+  position: relative;
+  width: min(100%, 620px);
+  margin: 0;
+  padding: 12px 12px 38px;
+  background: rgba(250, 247, 240, .96);
+  box-shadow: 0 22px 45px rgba(58, 49, 38, .16);
+  transform: rotate(-2.2deg);
+}
+.hero-photo::before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 24px;
+  top: -10px;
+  left: 40%;
+  background: rgba(204, 177, 115, .48);
+  transform: rotate(3deg);
+  z-index: 2;
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.34;
+  object-fit: contain;
+  filter: saturate(.86) contrast(.98);
+}
+.hero-photo figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: baseline;
+  margin: 12px 3px -24px;
+  color: var(--muted);
+  font: 400 .64rem/1.35 "DM Mono", monospace;
+  letter-spacing: .05em;
+}
+.hero-photo figcaption .scribble { font-size: 1.12rem; letter-spacing: 0; }
+
 .note-illustration {
   position: relative;
   margin: 0;

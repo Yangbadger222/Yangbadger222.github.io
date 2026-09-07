@@ -43,33 +43,11 @@
         </div>
       </div>
 
-      <div class="hero-sketch" aria-label="Hand-drawn autonomous rover sketch">
-        <svg viewBox="0 0 560 430" role="img" aria-label="Sketch of a rover with GNSS antennas and LiDAR">
-          <g class="sketch-lines">
-            <path d="M130 238 L173 170 L393 170 L442 236 L419 300 L153 300 Z" />
-            <path d="M176 170 L197 126 L368 126 L392 170" />
-            <path d="M224 126 L233 88 M336 126 L343 72" />
-            <path d="M228 87 L228 39 M341 72 L341 26" />
-            <path d="M213 39 L243 39 M326 26 L356 26" />
-            <ellipse cx="282" cy="131" rx="29" ry="12" />
-            <path d="M262 130 L262 107 Q282 91 302 107 L302 130" />
-            <circle cx="171" cy="303" r="40" />
-            <circle cx="279" cy="308" r="44" />
-            <circle cx="405" cy="303" r="40" />
-            <path d="M132 301 L101 321 M435 300 L466 319" />
-            <path d="M212 211 L349 211" />
-            <path d="M207 239 L359 239" />
-          </g>
-          <g class="sketch-annotations">
-            <path d="M352 65 C408 46 453 46 496 61" />
-            <path d="M305 113 C367 101 420 103 462 118" />
-            <path d="M395 180 C447 176 482 185 510 208" />
-          </g>
-        </svg>
-        <span class="scribble note-gnss">dual RTK<br>↙ antennas</span>
-        <span class="scribble note-lidar">MID-360 ↙</span>
-        <span class="scribble note-build">built to get lost<br>less often :)</span>
-        <div class="issue-stamp"><span>FIELD NOTE</span><strong>SEP / 2026</strong><span>SUZHOU</span></div>
+      <div class="hero-sketch" aria-label="Hand-drawn robotics field notes">
+        <figure class="hero-photo">
+          <img src="assets/robotics.webp" alt="四足机器人、RGB-D 相机桅杆与具身感知实验手绘图" />
+          <figcaption><span>FIELD NOTE / 00 · ROBOTICS EXPERIMENT</span><span class="scribble">perception in the loop.</span></figcaption>
+        </figure>
       </div>
       <div class="scroll-note scribble">keep scrolling ↓</div>
     </section>
@@ -117,27 +95,16 @@
           <div class="tech-line">ROS 2 · FAST-LIO2 · Nav2 MPPI · UM982 RTK · Jetson Orin NX</div>
           <p class="scribble project-note">global route + local perception →</p>
         </div>
-        <div class="rover-card" aria-label="Autonomous rover schematic">
-          <div class="rover-card-grid"></div>
-          <svg viewBox="0 0 520 320" role="img" aria-label="Rover side-view sketch">
-            <g class="sketch-lines">
-              <path d="M106 188 L150 132 L374 132 L415 188 L393 230 L126 230 Z"/>
-              <path d="M159 132 L188 92 L340 92 L372 132"/>
-              <circle cx="150" cy="236" r="34"/><circle cx="260" cy="241" r="38"/><circle cx="370" cy="236" r="34"/>
-              <path d="M220 92 L225 53 M308 92 L313 45"/>
-              <path d="M213 53 L237 53 M301 45 L325 45"/>
-              <ellipse cx="264" cy="96" rx="28" ry="10"/>
-            </g>
-          </svg>
-          <span class="scribble rover-label">real platform →</span>
-          <span class="mono-label rover-meta">ROS 2 / RTK / LiDAR</span>
-        </div>
+        <figure class="note-illustration project-visual tilt-right rover-photo">
+          <img src="assets/rover.webp" alt="六轮全向移动机器人手绘图" loading="lazy" />
+          <figcaption><span>six-wheel drive / real platform</span><span class="scribble">built to get lost less often →</span></figcaption>
+        </figure>
       </article>
 
       <article class="project image-project project-atec reverse">
         <figure class="note-illustration project-visual tilt-left">
-          <img data-illustration="atec" alt="Notebook illustration of the ATEC loco-manipulation task pipeline" loading="lazy" />
-          <figcaption><span>ATEC 2026 / task pipeline</span><span class="scribble">walk → detect → reach → grasp → carry</span></figcaption>
+          <img src="assets/field-notes.webp" alt="ATEC 2026 机器人动作任务链手绘图" loading="lazy" />
+          <figcaption><span>ATEC 2026 / locomotion + manipulation</span><span class="scribble">walk → detect → reach → grasp → carry</span></figcaption>
         </figure>
         <div class="project-copy">
           <p class="project-no mono-label">FIELD NOTE / 02</p>
@@ -159,7 +126,7 @@
         </div>
         <figure class="note-illustration project-visual tilt-right">
           <div class="tape tape-corner"></div>
-          <img src="assets/logger.webp" alt="Notebook illustration of the portable RTK logger prototype" loading="lazy" />
+          <img src="assets/rtk-logger.webp" alt="便携式 RTK 记录器手绘图" loading="lazy" />
           <figcaption><span>portable logger / prototype</span><span class="scribble">small tools for better data.</span></figcaption>
         </figure>
       </article>
@@ -190,7 +157,7 @@
       </div>
       <figure class="note-illustration research-visual tilt-left">
         <div class="tape tape-top"></div>
-        <img data-illustration="overhead" alt="Notebook illustration of overhead-image route planning combined with local LiDAR perception" loading="lazy" />
+        <img src="assets/navigation.webp" alt="俯视导航地图与路径规划手绘图" loading="lazy" />
         <figcaption><span>current research direction / 2026</span><span class="scribble">the map is useful. the world gets the final vote.</span></figcaption>
       </figure>
     </section>
