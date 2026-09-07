@@ -8,7 +8,8 @@
     atec: [
       "assets/illustrations/atec-0.b64",
       "assets/illustrations/atec-1.b64",
-      "assets/illustrations/atec-2.b64"
+      "assets/illustrations/atec-2a.b64",
+      "assets/illustrations/atec-2b.b64"
     ],
     overhead: [
       "assets/illustrations/overhead-0.b64",
