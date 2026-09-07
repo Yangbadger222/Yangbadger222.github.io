@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#eee8dc" />
-  <meta name="description" content="Jiahan Yang — robotics, autonomous systems and robot learning. Field notes, selected work and recent code." />
+  <meta name="description" content="Jiahan Yang — robotics, autonomous systems and robot learning. Research field notes, selected work and recent code." />
   <title>Jiahan Yang — Field Notes</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="visuals.css" />
 </head>
-
 <body>
   <div class="grain" aria-hidden="true"></div>
 
@@ -22,11 +21,11 @@
       <span class="brand-mark">JY</span>
       <span class="brand-note">field notes</span>
     </a>
-
     <nav class="nav" aria-label="Primary navigation">
       <a href="#about">01 About</a>
       <a href="#work">02 Work</a>
-      <a href="#code">03 Code</a>
+      <a href="#research">03 Research</a>
+      <a href="#code">04 Code</a>
       <a href="assets/jiahan.yang.pdf" target="_blank" rel="noreferrer">CV ↗</a>
     </nav>
   </header>
@@ -35,20 +34,8 @@
     <section class="hero section-shell">
       <div class="hero-copy">
         <p class="eyebrow">ROBOTICS / AUTONOMOUS SYSTEMS / ROBOT LEARNING</p>
-
-        <h1>
-          <span>JIAHAN</span>
-          <span>YANG<span class="dot">.</span></span>
-        </h1>
-
-        <p class="hero-statement">
-          I build robots that can
-          <em>perceive</em>,
-          <em>navigate</em>
-          and <em>act</em>
-          in the physical world.
-        </p>
-
+        <h1><span>JIAHAN</span><span>YANG<span class="dot">.</span></span></h1>
+        <p class="hero-statement">I build robots that can <em>perceive</em>, <em>navigate</em> and <em>act</em> in the physical world.</p>
         <div class="hero-links" aria-label="Contact links">
           <a href="https://github.com/Yangbadger222" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="assets/jiahan.yang.pdf" target="_blank" rel="noreferrer">CV ↓</a>
@@ -79,68 +66,35 @@
             <path d="M395 180 C447 176 482 185 510 208" />
           </g>
         </svg>
-
         <span class="scribble note-gnss">dual RTK<br>↙ antennas</span>
         <span class="scribble note-lidar">MID-360 ↙</span>
         <span class="scribble note-build">built to get lost<br>less often :)</span>
-
-        <div class="issue-stamp">
-          <span>FIELD NOTE</span>
-          <strong>SEP / 2026</strong>
-          <span>SUZHOU</span>
-        </div>
+        <div class="issue-stamp"><span>FIELD NOTE</span><strong>SEP / 2026</strong><span>SUZHOU</span></div>
       </div>
-
       <div class="scroll-note scribble">keep scrolling ↓</div>
     </section>
 
     <section class="about section-shell ruled-section" id="about">
-      <div class="section-index">
-        <span>01</span>
-        <p>ABOUT</p>
-      </div>
-
+      <div class="section-index"><span>01</span><p>ABOUT</p></div>
       <div class="about-main">
-        <p class="lead">
-          Mechatronics &amp; Robotic Systems student at
-          <strong>Xi'an Jiaotong-Liverpool University</strong>,
-          interested in how robots understand where they are,
-          decide where to go, and turn that decision into action.
-        </p>
-
-        <p class="body-copy">
-          My current work crosses autonomous navigation, GNSS / RTK,
-          SLAM, robot learning, loco-manipulation and real-world robotics.
-          I enjoy projects that move all the way from an algorithm or
-          sketch to hardware that actually has to work.
-        </p>
-
+        <p class="lead">Mechatronics &amp; Robotic Systems student at <strong>Xi'an Jiaotong-Liverpool University</strong>, interested in how robots understand where they are, decide where to go, and turn that decision into action.</p>
+        <p class="body-copy">My work crosses autonomous navigation, GNSS / RTK, SLAM, robot learning, loco-manipulation and real-world robotics. I like projects that move from an algorithm or sketch to hardware that actually has to work.</p>
         <div class="research-question">
-          <span class="mono-label">CURRENT QUESTION / 01</span>
-          <p>How can a robot use imperfect global maps together with local perception to navigate reliably?</p>
+          <span class="mono-label">A NOTE TO MYSELF</span>
+          <p>Build the thing. Test it outside. Find the assumption that was wrong. Repeat.</p>
         </div>
       </div>
-
       <aside class="about-margin">
         <div class="margin-rule"></div>
         <p class="scribble margin-title">currently thinking about →</p>
         <ul>
-          <li>robot learning</li>
-          <li>autonomous navigation</li>
-          <li>loco-manipulation</li>
-          <li>overhead imagery</li>
-          <li>embodied intelligence</li>
+          <li>robot learning</li><li>autonomous navigation</li><li>loco-manipulation</li><li>overhead imagery</li><li>embodied intelligence</li>
         </ul>
-
         <div class="mini-diagram" aria-label="Robotics experiment sketch">
           <span class="mono-label">EXPERIMENT NOTE</span>
           <div class="mini-bot">
-            <span class="camera"></span>
-            <span class="body"></span>
-            <span class="leg l1"></span>
-            <span class="leg l2"></span>
-            <span class="leg l3"></span>
-            <span class="leg l4"></span>
+            <span class="camera"></span><span class="body"></span>
+            <span class="leg l1"></span><span class="leg l2"></span><span class="leg l3"></span><span class="leg l4"></span>
           </div>
           <p class="scribble">perception mounted up here ↑</p>
         </div>
@@ -148,32 +102,21 @@
     </section>
 
     <section class="work section-shell ruled-section" id="work">
-      <div class="section-index">
-        <span>02</span>
-        <p>SELECTED WORK</p>
-      </div>
-
+      <div class="section-index"><span>02</span><p>SELECTED WORK</p></div>
       <div class="work-intro">
         <h2>Things I keep coming back to.</h2>
-        <p>
-          A few representative projects — not every repository.
-          The code list below updates itself as new public repos appear.
-        </p>
+        <p>Representative projects, not a catalogue. The visuals are treated as notebook artifacts; the repository list later on stays automatic.</p>
       </div>
 
-      <article class="project project-rover">
+      <article class="project image-project project-rover">
         <div class="project-copy">
           <p class="project-no mono-label">FIELD NOTE / 01</p>
           <h3>Finding the way.</h3>
           <p class="project-title">XJTLU Autonomous Vehicle Research Platform</p>
-          <p>
-            RTK route navigation, LiDAR odometry, mapping and local planning
-            on a real ROS 2 rover platform.
-          </p>
+          <p>RTK route navigation, LiDAR odometry, mapping and local planning on a real ROS 2 rover platform.</p>
           <div class="tech-line">ROS 2 · FAST-LIO2 · Nav2 MPPI · UM982 RTK · Jetson Orin NX</div>
           <p class="scribble project-note">global route + local perception →</p>
         </div>
-
         <div class="rover-card" aria-label="Autonomous rover schematic">
           <div class="rover-card-grid"></div>
           <svg viewBox="0 0 520 320" role="img" aria-label="Rover side-view sketch">
@@ -191,50 +134,33 @@
         </div>
       </article>
 
-      <article class="project project-atec">
-        <div class="sim-sheet" aria-label="ATEC loco-manipulation pipeline diagram">
-          <div class="sim-grid"></div>
-          <div class="sim-tag">20 × 20 m</div>
-          <div class="pipeline">
-            <span>walk</span><i>→</i><span>detect</span><i>→</i><span>reach</span><i>→</i><span>grasp</span><i>→</i><span>carry</span>
-          </div>
-          <p class="scribble sim-note">crouch first! ↓</p>
-          <div class="sim-footer">B2 + Piper / Isaac Lab / PPO / RGB-D</div>
-        </div>
-
+      <article class="project image-project project-atec reverse">
+        <figure class="note-illustration project-visual tilt-left">
+          <img data-illustration="atec" alt="Notebook illustration of the ATEC loco-manipulation task pipeline" loading="lazy" />
+          <figcaption><span>ATEC 2026 / task pipeline</span><span class="scribble">walk → detect → reach → grasp → carry</span></figcaption>
+        </figure>
         <div class="project-copy">
           <p class="project-no mono-label">FIELD NOTE / 02</p>
           <h3>Teaching a robot<br>to move &amp; manipulate.</h3>
           <p class="project-title">ATEC 2026 Simulation Challenge</p>
-          <p>
-            End-to-end loco-manipulation pipeline combining RL locomotion,
-            task planning, 6-DoF IK and RGB-D perception.
-          </p>
+          <p>End-to-end loco-manipulation combining RL locomotion, finite-state task planning, 6-DoF IK and RGB-D perception.</p>
           <div class="tech-line">Isaac Lab · RSL-RL / PPO · Python · Unitree B2 · AgileX Piper</div>
         </div>
       </article>
 
-      <article class="project project-logger">
+      <article class="project image-project project-logger">
         <div class="project-copy">
           <p class="project-no mono-label">FIELD NOTE / 03</p>
           <h3>Collecting better ground truth.</h3>
           <p class="project-title">Portable RTK / GNSS Logger</p>
-          <p>
-            A small standalone device for recording high-precision GNSS data
-            without carrying a laptop — local storage, Wi-Fi configuration and
-            a web interface included.
-          </p>
+          <p>A standalone device for recording high-precision GNSS data without carrying a laptop — local storage, Wi-Fi configuration and a web interface included.</p>
           <div class="tech-line">ESP32-S3 · UM982 · MicroSD · ESP-IDF · Wi-Fi</div>
           <p class="scribble project-note">prototype → enclosure → field data</p>
         </div>
-
-        <figure class="snapshot logger-photo">
+        <figure class="note-illustration project-visual tilt-right">
           <div class="tape tape-corner"></div>
-          <img src="assets/logger.webp" alt="White custom RTK logger enclosure on a desk" />
-          <figcaption>
-            <span>portable logger / prototype</span>
-            <span class="scribble">finally works.</span>
-          </figcaption>
+          <img src="assets/logger.webp" alt="Notebook illustration of the portable RTK logger prototype" loading="lazy" />
+          <figcaption><span>portable logger / prototype</span><span class="scribble">small tools for better data.</span></figcaption>
         </figure>
       </article>
 
@@ -243,90 +169,58 @@
           <p class="project-no mono-label">FIELD NOTE / 04</p>
           <h3>Robots learning from humans.</h3>
           <p class="project-title">SO-101 Real-Robot Imitation Learning</p>
-          <p>
-            Real-robot deployment of imitation-learning policies for tabletop
-            cleanup and grasping, with a focus on calibration, action execution
-            and systematic failure analysis.
-          </p>
+          <p>Real-robot deployment of imitation-learning policies for tabletop cleanup and grasping, focusing on calibration, action execution and systematic failure analysis.</p>
           <div class="tech-line">SO-101 · π0.5 · Imitation Learning · Python</div>
         </div>
-
         <div class="failure-notes">
           <span class="mono-label">WHAT USUALLY BREAKS</span>
-          <p>calibration</p>
-          <p>grasp timing</p>
-          <p>dataset quality</p>
-          <p class="scribble">→ then retry.</p>
+          <p>calibration</p><p>grasp timing</p><p>dataset quality</p><p class="scribble">→ then retry.</p>
         </div>
       </article>
     </section>
 
+    <section class="research section-shell ruled-section" id="research">
+      <div class="section-index"><span>03</span><p>CURRENT RESEARCH</p></div>
+      <div class="research-copy">
+        <p class="mono-label">QUESTION / RIGHT NOW</p>
+        <h2>Can a robot plan globally from overhead imagery, then survive locally with onboard perception?</h2>
+        <p>I'm exploring navigation from satellite / map imagery where precise geometry is unavailable: infer traversability and candidate paths globally, then use LiDAR or camera perception to adapt to what the map cannot see.</p>
+        <div class="research-tags"><span>overhead imagery</span><span>traversability</span><span>path planning</span><span>local perception</span></div>
+        <p class="scribble research-note">plan globally. sense locally. change your mind when reality disagrees. →</p>
+      </div>
+      <figure class="note-illustration research-visual tilt-left">
+        <div class="tape tape-top"></div>
+        <img data-illustration="overhead" alt="Notebook illustration of overhead-image route planning combined with local LiDAR perception" loading="lazy" />
+        <figcaption><span>current research direction / 2026</span><span class="scribble">the map is useful. the world gets the final vote.</span></figcaption>
+      </figure>
+    </section>
+
     <section class="code section-shell ruled-section" id="code">
-      <div class="section-index">
-        <span>03</span>
-        <p>RECENT CODE</p>
-      </div>
-
+      <div class="section-index"><span>04</span><p>RECENT CODE</p></div>
       <div class="code-heading">
-        <div>
-          <h2>GitHub, without the maintenance.</h2>
-          <p>
-            Recent public repositories are loaded directly from GitHub.
-            New repo? It appears here automatically.
-          </p>
-        </div>
-        <p class="scribble auto-note">no redesign required ↘</p>
+        <div><h2>GitHub, without the maintenance.</h2><p>Recent public repositories are loaded directly from GitHub. A new repo can appear here without redesigning this page.</p></div>
+        <p class="scribble auto-note">let the code list grow by itself ↘</p>
       </div>
-
-      <div id="repo-list" class="repo-list" aria-live="polite">
-        <div class="repo-loading">
-          <span>fetching recent repos</span>
-          <span class="loading-dots">...</span>
-        </div>
-      </div>
-
+      <div id="repo-list" class="repo-list" aria-live="polite"><div class="repo-loading"><span>fetching recent repos</span><span class="loading-dots">...</span></div></div>
       <div class="repo-footer">
-        <p>
-          Add the topic <code>portfolio</code> to an important repository and
-          it will be prioritized here automatically.
-        </p>
-        <a href="https://github.com/Yangbadger222?tab=repositories" target="_blank" rel="noreferrer">
-          View all repositories ↗
-        </a>
+        <p>Add the topic <code>portfolio</code> to an important repository and it will be prioritized here automatically.</p>
+        <a href="https://github.com/Yangbadger222?tab=repositories" target="_blank" rel="noreferrer">View all repositories ↗</a>
       </div>
     </section>
 
     <section class="now section-shell ruled-section">
-      <div class="section-index">
-        <span>NOW</span>
-        <p>SEP 2026</p>
-      </div>
-
+      <div class="section-index"><span>NOW</span><p>SEP 2026</p></div>
       <div class="now-grid">
         <h2>Still figuring things out.</h2>
-        <div class="now-list">
-          <p><span>→</span> overhead-image autonomous navigation</p>
-          <p><span>→</span> loco-manipulation &amp; robot learning</p>
-          <p><span>→</span> portable RTK dataset collection</p>
-          <p><span>→</span> whatever breaks next</p>
-        </div>
+        <div class="now-list"><p><span>→</span> overhead-image autonomous navigation</p><p><span>→</span> loco-manipulation &amp; robot learning</p><p><span>→</span> portable RTK dataset collection</p><p><span>→</span> whatever breaks next</p></div>
         <p class="scribble now-note">research is mostly debugging with better questions.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer section-shell">
-    <div>
-      <p class="footer-name">JIAHAN YANG</p>
-      <p>Robotics · Navigation · Learning</p>
-    </div>
-
-    <div class="footer-links">
-      <a href="https://github.com/Yangbadger222" target="_blank" rel="noreferrer">GitHub ↗</a>
-      <a href="assets/jiahan.yang.pdf" target="_blank" rel="noreferrer">CV ↗</a>
-      <a href="mailto:Yangbadger222@gmail.com">Email ↗</a>
-    </div>
-
+    <div><p class="footer-name">JIAHAN YANG</p><p>Robotics · Navigation · Learning</p></div>
+    <div class="footer-links"><a href="https://github.com/Yangbadger222" target="_blank" rel="noreferrer">GitHub ↗</a><a href="assets/jiahan.yang.pdf" target="_blank" rel="noreferrer">CV ↗</a><a href="mailto:Yangbadger222@gmail.com">Email ↗</a></div>
     <p class="scribble footer-note">thanks for looking through my notes.</p>
   </footer>
 
