@@ -1,0 +1,84 @@
+.mini-diagram {
+  width: 210px;
+  margin: 50px 0 0 auto;
+  padding: 18px 16px 14px;
+  border: 1px solid rgba(62, 89, 98, .35);
+  background: rgba(245, 240, 231, .48);
+  transform: rotate(2deg);
+  position: relative;
+}
+.mini-diagram > .scribble { margin: 8px 0 0; font-size: 1.15rem; }
+.mini-bot { height: 130px; position: relative; margin-top: 12px; }
+.mini-bot .body {
+  position: absolute;
+  left: 48px; top: 52px;
+  width: 78px; height: 38px;
+  border: 2px solid var(--ink);
+  border-radius: 46% 46% 32% 32%;
+}
+.mini-bot .camera {
+  position: absolute;
+  left: 75px; top: 17px;
+  width: 24px; height: 24px;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+}
+.mini-bot .camera::after {
+  content: "";
+  position: absolute;
+  left: 9px; top: 22px;
+  width: 2px; height: 14px;
+  background: var(--ink);
+}
+.mini-bot .leg {
+  position: absolute;
+  width: 2px; height: 45px;
+  background: var(--ink);
+  transform-origin: top;
+}
+.mini-bot .l1 { left: 54px; top: 82px; transform: rotate(23deg); }
+.mini-bot .l2 { left: 76px; top: 84px; transform: rotate(-18deg); }
+.mini-bot .l3 { left: 101px; top: 84px; transform: rotate(18deg); }
+.mini-bot .l4 { left: 123px; top: 82px; transform: rotate(-23deg); }
+.rover-card {
+  position: relative;
+  min-height: 360px;
+  width: min(100%, 540px);
+  padding: 26px;
+  border: 1px solid rgba(62, 89, 98, .38);
+  background: rgba(245, 240, 231, .5);
+  overflow: hidden;
+  transform: rotate(-1.1deg);
+  box-shadow: 0 14px 34px rgba(58,49,38,.07);
+}
+.rover-card-grid {
+  position: absolute;
+  inset: 0;
+  opacity: .22;
+  background:
+    linear-gradient(rgba(62, 89, 98, .25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(62, 89, 98, .25) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.rover-card svg { position: relative; z-index: 1; width: 100%; margin-top: 8px; }
+.rover-label {
+  position: absolute;
+  right: 22px;
+  top: 24px;
+  z-index: 2;
+  font-size: 1.4rem;
+  transform: rotate(4deg);
+}
+.rover-meta {
+  position: absolute;
+  left: 22px;
+  bottom: 17px;
+  z-index: 2;
+}
+@media (max-width: 980px) {
+  .mini-diagram { margin-left: 0; margin-right: 0; }
+}
+@media (max-width: 720px) {
+  .mini-diagram { width: 190px; }
+  .rover-card { min-height: 290px; }
+}
